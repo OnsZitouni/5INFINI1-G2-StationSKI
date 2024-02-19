@@ -19,7 +19,7 @@ services:
     ports:
       - "3306:3306"
     environment:
-      MYSQL_DATABASE: stationsky
+      MYSQL_DATABASE: stationski
       MYSQL_ALLOW_EMPTY_PASSWORD: "yes"
  
   
