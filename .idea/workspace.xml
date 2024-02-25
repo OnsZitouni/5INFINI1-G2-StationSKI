@@ -14,6 +14,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -41,6 +42,8 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "Spring Boot.StationSkiApplication.executor": "Run",
     "WebServerToolWindowFactoryState": "false",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/rayen/OneDrive/Documents/GitHub/5INFINI1-G2-StationSKI",
     "node.js.detected.package.eslint": "true",
@@ -54,6 +57,14 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.example.stationski.services" />
+    </key>
+  </component>
   <component name="RunManager" selected="Docker.Dockerfile">
     <configuration name="stationSki [install]" type="MavenRunConfiguration" factoryName="Maven" temporary="true">
       <MavenSettings>
@@ -131,7 +142,7 @@
       <workItem from="1708771168827" duration="816000" />
       <workItem from="1708872509909" duration="4000" />
       <workItem from="1708872552480" duration="1770000" />
-      <workItem from="1708874347286" duration="3257000" />
+      <workItem from="1708874347286" duration="4750000" />
     </task>
     <servers />
   </component>
