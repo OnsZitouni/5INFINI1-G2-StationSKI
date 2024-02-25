@@ -30,6 +30,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Docker.Dockerfile.executor": "Run",
     "Maven.stationSki [clean].executor": "Run",
     "Maven.stationSki [install].executor": "Run",
     "RequestMappingsPanelOrder0": "0",
@@ -53,7 +54,7 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Spring Boot.StationSkiApplication">
+  <component name="RunManager" selected="Docker.Dockerfile">
     <configuration name="stationSki [install]" type="MavenRunConfiguration" factoryName="Maven" temporary="true">
       <MavenSettings>
         <option name="myGeneralSettings" />
@@ -91,8 +92,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Dockerfile" type="docker-deploy" factoryName="dockerfile" temporary="true" server-name="Docker">
+      <deployment type="dockerfile">
+        <settings>
+          <option name="containerName" value="" />
+          <option name="sourceFilePath" value="Dockerfile" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Docker.Dockerfile" />
+      <item itemvalue="Maven.stationSki [install]" />
+      <item itemvalue="Spring Boot.StationSkiApplication" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Docker.Dockerfile" />
         <item itemvalue="Maven.stationSki [install]" />
       </list>
     </recent_temporary>
@@ -115,7 +131,7 @@
       <workItem from="1708771168827" duration="816000" />
       <workItem from="1708872509909" duration="4000" />
       <workItem from="1708872552480" duration="1770000" />
-      <workItem from="1708874347286" duration="1556000" />
+      <workItem from="1708874347286" duration="3257000" />
     </task>
     <servers />
   </component>
