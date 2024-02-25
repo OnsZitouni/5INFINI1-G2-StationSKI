@@ -46,6 +46,13 @@ stage('MVN COMPILE') {
       }
     }
 
+  stage ('JUNIT TEST') {
+      steps {
+        sh 'mvn test'
+        echo 'test stage done'
+      }
+    }
+
 
 
 	  
