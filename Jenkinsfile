@@ -69,6 +69,16 @@ stage ('NEXUS DEPLOY') {
       }
     }
 
+	  
+
+  stage('Build Docker') {
+    steps {
+        script {   
+                sh "docker build -t ${PROD_TAG} ."
+        }
+    }
+}
+
 
 
 	  
