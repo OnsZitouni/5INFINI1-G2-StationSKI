@@ -56,7 +56,7 @@ stage('MVN COMPILE') {
   stage ('STATIC TEST WITH SONAR') {
        steps {
 	 withSonarQubeEnv('sonarqube') {
-      sh" ${SCANNER_HOME**}
+      sh" ${SCANNER_HOME}
        sh 'mvn sonar:sonar' 
   }
       
