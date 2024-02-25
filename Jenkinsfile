@@ -32,11 +32,16 @@ pipeline {
 	  echo "Current branch name: ${targetBranch}"
       }
     }
-  }
-	  stage('MVN BUILD') {
+	  	  stage('MVN BUILD') {
       steps {
         sh 'mvn clean install'
         echo 'Build stage done'
       }
     }
+
+
+
+	  
+  }
+
 }
