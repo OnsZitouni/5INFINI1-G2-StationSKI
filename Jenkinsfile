@@ -53,15 +53,20 @@ stage('MVN COMPILE') {
       }
     }
 	  
-  stage ('STATIC TEST WITH SONAR') {
-       steps {
-	 withSonarQubeEnv('sonarqube') {
-      sh" ${SCANNER_HOME}
-       sh 'mvn sonar:sonar' 
-  }
+  //stage ('STATIC TEST WITH SONAR') {
+    //   steps {
+	// withSonarQubeEnv('sonarqube') {
+     // sh" ${SCANNER_HOME}
+      // sh 'mvn sonar:sonar' 
+  //}
       
          
-       }
+    //   }
+    //}
+stage ('NEXUS DEPLOY') {
+       steps {
+       sh 'mvn deploy -DskipTests'
+      }
     }
 
 
