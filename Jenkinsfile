@@ -56,9 +56,7 @@ stage('MVN COMPILE') {
   stage ('STATIC TEST WITH SONAR') {
        steps {
 	 withSonarQubeEnv('sonarqube') {
-      sh" ${SCANNER_HOME**}**}/bin/sonar-scanner \
-      -Dsonar.projectKey=simple_webapp \
-      -Dsonar.sources=. "
+      sh" ${SCANNER_HOME**}
        sh 'mvn sonar:sonar' 
   }
       
