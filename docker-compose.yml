@@ -1,6 +1,6 @@
 version: '3.3'
 services:
-  event:
+  station:
     image: rafiaaons/stationsky:1.0
     restart: always
     environment:
