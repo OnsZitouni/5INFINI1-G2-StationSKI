@@ -21,3 +21,5 @@ services:
     environment:
       MYSQL_DATABASE: stationSki
       MYSQL_ALLOW_EMPTY_PASSWORD: "yes"
+ 
+  
