@@ -33,7 +33,7 @@ pipeline {
       }
     }
   }
-	  stage('MVN BUILD') 
+	  stage('MVN BUILD') {
       steps {
         sh 'mvn clean install'
         echo 'Build stage done'
