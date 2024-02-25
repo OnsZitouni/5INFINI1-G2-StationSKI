@@ -52,6 +52,14 @@ stage('MVN COMPILE') {
         echo 'test stage done'
       }
     }
+	  
+  stage ('STATIC TEST WITH SONAR') {
+       steps {
+         withSonarQubeEnv('sonarqube') {
+                sh 'mvn sonar:sonar'
+         }
+       }
+    }
 
 
 
