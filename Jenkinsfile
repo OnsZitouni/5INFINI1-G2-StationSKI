@@ -79,6 +79,22 @@ stage ('NEXUS DEPLOY') {
     }
 }
 
+	  stage('Docker Login'){
+            steps{
+                withCredentials([usernamePassword(credentialsId: 'b31f1212-972e-4b38-8bd6-83d716a6e871', usernameVariable: 'DOCKERHUB_USERNAME', passwordVariable: 'DOCKERHUB_PASSWORD')]) {
+                sh "docker login -u ${DOCKERHUB_USERNAME} -p ${DOCKERHUB_PASSWORD}"
+    }
+  }
+
+        }
+
+	  stage('Docker Push'){
+            steps{
+                sh 'docker push $DOCKERHUB_USERNAME/ski --all-tags '
+            }
+        }
+
+
 
 
 	  
