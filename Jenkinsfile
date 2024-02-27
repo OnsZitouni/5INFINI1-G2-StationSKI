@@ -53,31 +53,21 @@ stage('MVN COMPILE') {
       }
     }
 	  
-//stage("SonarQube ") {
-       //  steps {
-        //     withSonarQubeEnv('sonarqube') {
-     //               sh 'mvn sonar:sonar'
-       //       }
-      //     }
-    //    }
-	  
 stage("SonarQube ") {
-  steps {
-     script {
-                    def scannerHome = tool 'sonarqube'
-                    withSonarQubeEnv('sonarqube') {
-                        sh "${scannerHome}/bin/sonar-scanner"
-                    }
-      }
-    }
-   }
+         steps {
+             withSonarQubeEnv('sonarqube') {
+                    sh 'mvn sonar:sonar'
+              }
+           }
+        }
+	  
 
 	  
-//stage ('NEXUS DEPLOY') {
-    //   steps {
-     // sh 'mvn deploy -DskipTests'
-   //   }
- //   }
+stage ('NEXUS DEPLOY') {
+       steps {
+      sh 'mvn deploy -DskipTests'
+      }
+    }
 
 	  
 
