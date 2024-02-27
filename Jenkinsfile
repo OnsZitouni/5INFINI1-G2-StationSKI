@@ -60,6 +60,17 @@ stage('MVN COMPILE') {
        //       }
       //     }
     //    }
+	  
+stage("SonarQube ") {
+  steps {
+     script {
+                    def scannerHome = tool 'SonarQubeScanner'
+                    withSonarQubeEnv('sonarqube') {
+                        sh "${scannerHome}/bin/sonar-scanner"
+                    }
+      }
+    }
+   }
 
 	  
 //stage ('NEXUS DEPLOY') {
