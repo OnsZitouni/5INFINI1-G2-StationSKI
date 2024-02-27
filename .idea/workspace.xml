@@ -5,9 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cfe60a15-8f00-4d2a-8efe-e1f17aacc921" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/stationskitestunitaires/AbonnementServiceImpTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/stationskitest/CoursServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/stationski/entities/Cours.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/stationski/entities/Cours.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/stationski/services/CoursService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/stationski/services/CoursService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/stationski/services/ICoursService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/stationski/services/ICoursService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,9 +27,19 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 6
-}]]></component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
   <component name="ProjectId" id="2coHlcI8UtUHZWXFItPDGROtEuW" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -42,14 +55,63 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "master",
+    "last_opened_file_path": "D:/Vagrant/5INFINI1-G2-StationSKI",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="JUnit.CoursServiceTest">
+    <configuration name="CoursServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="5INFINI1-G2-StationSKI" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.stationskitest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.stationskitest" />
+      <option name="MAIN_CLASS_NAME" value="com.example.stationskitest.CoursServiceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CoursServiceTest.testListeCoursSnowBoard" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="5INFINI1-G2-StationSKI" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.stationskitest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.stationskitest" />
+      <option name="MAIN_CLASS_NAME" value="com.example.stationskitest.CoursServiceTest" />
+      <option name="METHOD_NAME" value="testListeCoursSnowBoard" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StationSkiApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="5INFINI1-G2-StationSKI" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.stationski.StationSkiApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="StationSkiApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="stationSki" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.stationski.StationSkiApplication" />
@@ -57,6 +119,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.CoursServiceTest" />
+        <item itemvalue="JUnit.CoursServiceTest.testListeCoursSnowBoard" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -67,10 +135,27 @@
       <option name="presentableId" value="Default" />
       <updated>1708771165435</updated>
       <workItem from="1708771168827" duration="816000" />
+      <workItem from="1709050031765" duration="6609000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/5INFINI1_G2_StationSKI$CoursServiceTest.ic" NAME="CoursServiceTest Coverage Results" MODIFIED="1709057568472" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.example.stationskitest.*</FILTER>
+    </SUITE>
   </component>
 </project>

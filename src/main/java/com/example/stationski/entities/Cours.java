@@ -20,7 +20,7 @@ public class Cours implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer idCours; // Clé primaire
-    private Long numCours;
+    private int numCours;
     private TypeCours typeCours;
     private Support support;
     private float prix;
