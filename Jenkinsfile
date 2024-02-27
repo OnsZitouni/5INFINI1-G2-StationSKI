@@ -53,14 +53,28 @@ stage('MVN COMPILE') {
       }
     }
 	  
-stage("SonarQube ") {
-         steps {
-             withSonarQubeEnv('sonarqube') {
-                    sh 'mvn sonar:sonar'
-              }
-           }
-        }
+//stage("SonarQube ") {
+       //  steps {
+        //     withSonarQubeEnv('sonarqube') {
+     //               sh 'mvn sonar:sonar'
+       //       }
+      //     }
+    //    }
 
+	      stages {
+        stage('sonar') {
+            environment {
+                SCANNER_HOME = tool 'sonar-scanner'
+            }
+            steps {
+                withSonarQubeEnv('sonarqube') {
+                    sh" ${SCANNER_HOME}}/bin/sonar-scanner \
+                    -Dsonar.projectKey=simple_webapp \
+                    -Dsonar.sources=. "
+                }
+            }
+        }
+    }
 
 	  
 stage ('NEXUS DEPLOY') {
