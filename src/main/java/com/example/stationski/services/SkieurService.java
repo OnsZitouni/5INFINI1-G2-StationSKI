@@ -30,6 +30,7 @@ public class SkieurService implements ISkieurService{
         log.info("piste "+piste.getNomPiste());
         skieur.getPistes().add(piste);
         log.info("fin methode assignSkieurToPiste");
+        //hello world
 
         return skieur;
     }
