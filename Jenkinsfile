@@ -53,7 +53,7 @@ stage('MVN COMPILE') {
       }
     }
 	  
-stage("SonarQube Analysis") {
+stage("SonarQube ") {
             steps {
                 withSonarQubeEnv('sonarqube') {
                     sh 'mvn sonar:sonar'
