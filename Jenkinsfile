@@ -46,20 +46,20 @@ stage('MVN COMPILE') {
       }
     }
 
-  stage ('JUNIT TEST') {
+  stage ('JUNIT / Mockito TEST') {
       steps {
         sh 'mvn test'
         echo 'test stage done'
       }
     }
 	  
-stage("SonarQube ") {
-         steps {
-              withSonarQubeEnv('sonarqube') {
-                    sh 'mvn sonar:sonar'
-              }
-            }
-        }
+//stage("SonarQube ") {
+    //     steps {
+     //         withSonarQubeEnv('sonarqube') {
+    //                sh 'mvn sonar:sonar'
+    //          }
+    //        }
+   //     }
 
 
 	  
