@@ -63,11 +63,11 @@ stage('MVN COMPILE') {
 	  
 
 	  
-stage ('NEXUS DEPLOY') {
-       steps {
-      sh 'mvn deploy -DskipTests'
-      }
-    }
+//stage ('NEXUS DEPLOY') {
+//       steps {
+ //     sh 'mvn deploy -DskipTests'
+ //     }
+//    }
 
 	  
 
