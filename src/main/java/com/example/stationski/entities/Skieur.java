@@ -8,6 +8,7 @@ import javax.persistence.*;
 import java.io.Serializable;
 import java.time.LocalDate;
 import java.util.Date;
+import java.util.HashSet;
 import java.util.Set;
 
 @Entity
@@ -29,10 +30,11 @@ public class Skieur implements Serializable {
     private LocalDate dateNaissance;
     private String ville;
     @ManyToMany
-    private Set<Piste> pistes;
+    private Set<Piste> pistes= new HashSet<>();;
     @OneToMany(mappedBy = "skieur",cascade = CascadeType.ALL)
     private Set<Inscription> inscriptions;
     @OneToOne(cascade = CascadeType.ALL)
     @JsonIgnore
     private Abonnement abonnement;
+
 }
