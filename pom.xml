@@ -89,7 +89,7 @@
         <repository>
             <id>skieur-id</id>
             <name>Skieur</name>
-            <url>http://192.168.33.10:8081/#browse/browse:Skieur</url>
+            <url>http://192.168.33.10:8081/repository/Skieur</url>
         </repository>
     </distributionManagement>
 
