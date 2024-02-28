@@ -1,29 +1,39 @@
-version: '3.3'
+version: "3.8"
+
 services:
-  station:
-    image: rafiaaons/stationsky:1.0
-    restart: on-failure
+  mysqldb:
+    image: mysql:5.7
+    restart: unless-stopped
     environment:
-      - spring.datasource.url=jdbc:mysql://mysql:3306/stationSki?useUnicode=true&createDatabaseIfNotExist=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
-      - spring.datasource.username=root
-      - spring.datasource.password=
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABaSE: stationSki
     ports:
-      - "8089:8089"
-    depends_on:
-      - mysql_db
-  mysql_db:
-    image: "mysql:5.7.24"
+      - 3306:3306
     volumes:
       - db:/var/lib/mysql
+  achat-backend:
+    depends_on:
+      - mysqldb
+    image: rafiaaons/stationsky:1.0
     restart: on-failure
     ports:
-      - "3306:3306"
+      - 8089:8089
     environment:
-      MYSQL_DATABASE: stationSki
-      MYSQL_ALLOW_EMPTY_PASSWORD: "yes"
+      SPRING_APPLICATION_JSON: '{
+  "spring.datasource.url": "jdbc:mysql://mysqldb:3306/stationSki?createDatabaseIfNotExist=true",
+  "spring.datasource.username": "root",
+  "spring.datasource.password": "root",
+  "spring.jpa.properties.hibernate.dialect": "org.hibernate.dialect.MySQL5InnoDBDialect",
+  "spring.jpa.hibernate.ddl-auto": "update"
+}'
 
-volumes:
-   db:
-      
- 
+
+    stdin_open: true
+    tty: true
+
   
+volumes:
+  db:
+
+
+
