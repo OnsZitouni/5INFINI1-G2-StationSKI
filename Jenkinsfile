@@ -61,13 +61,13 @@ stage('MVN COMPILE') {
     //       }
     //    }
 
-	  stage('SonarQube Analysis') {
+stage('SonarQube Analysis') {
             steps {
                 // This step runs the SonarQube analysis
                 sh 'mvn sonar:sonar \
-                    -Dsonar.projectKey=amir \
+                    -Dsonar.projectKey=StationSki \
                     -Dsonar.host.url=http://192.168.162.222:9000/ \
-                    -Dsonar.login=squ_abc4783c5ce61155977866a13a95d807e69fb064'
+                    -Dsonar.login=sqa_63225c002bc2854e08a3a0c7f4835317723afad6'
             }
         }
 	  
