@@ -61,15 +61,15 @@ stage('MVN COMPILE') {
     //       }
     //    }
 
-stage('SonarQube Analysis') {
-            steps {
-                // This step runs the SonarQube analysis
-                sh 'mvn sonar:sonar \
-                    -Dsonar.projectKey=StationSki \
-                    -Dsonar.host.url=http://192.168.162.222:9000/ \
-                    -Dsonar.login=sqa_63225c002bc2854e08a3a0c7f4835317723afad6'
-            }
-        }
+//stage('SonarQube Analysis') {
+     //       steps {
+    ///            // This step runs the SonarQube analysis
+      //          sh 'mvn sonar:sonar \
+     //               -Dsonar.projectKey=StationSki \
+         //           -Dsonar.host.url=http://192.168.162.222:9000/ \
+         //           -Dsonar.login=sqa_63225c002bc2854e08a3a0c7f4835317723afad6'
+         //   }
+      //  }
 	  
 
 	  
