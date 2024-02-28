@@ -87,9 +87,9 @@
 
     <distributionManagement>
         <repository>
-            <id>deploymentRepo</id>
-            <name>Nexus Repository</name>
-            <url>http://192.168.33.10:8081/repository/maven-releases/</url>
+            <id>skieur-id</id>
+            <name>Skieur</name>
+            <url>http://192.168.33.10:8081/#browse/browse:Skieur</url>
         </repository>
     </distributionManagement>
 
