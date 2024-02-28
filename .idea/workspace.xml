@@ -67,7 +67,7 @@
       <recent name="com.example.stationski.services" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.SkieurServiceTest">
+  <component name="RunManager" selected="Spring Boot.StationSkiApplication">
     <configuration name="SkieurServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="stationSki" />
       <extension name="coverage">
@@ -186,7 +186,7 @@
       <workItem from="1709024963572" duration="1517000" />
       <workItem from="1709039539866" duration="2063000" />
       <workItem from="1709073546654" duration="4166000" />
-      <workItem from="1709079963653" duration="455000" />
+      <workItem from="1709079963653" duration="896000" />
     </task>
     <servers />
   </component>
