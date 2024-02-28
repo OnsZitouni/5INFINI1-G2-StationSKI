@@ -166,7 +166,6 @@
       <set>
         <option value="jdk-1.8.0_402-corretto-1.8.0_402-4caba194b151-ae57be32" />
         <option value="jdk-11.0.21-corretto-11.0.21-4caba194b151-9f4ef98c" />
-        <option value="jdk-17.0.10-corretto-17.0.10-4caba194b151-5cd809f4" />
       </set>
     </attachedChunks>
   </component>
@@ -187,6 +186,7 @@
       <workItem from="1709039539866" duration="2063000" />
       <workItem from="1709073546654" duration="4166000" />
       <workItem from="1709079963653" duration="1179000" />
+      <workItem from="1709073546654" duration="104000" />
     </task>
     <servers />
   </component>
